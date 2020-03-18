@@ -1,3 +1,9 @@
+# IDE folders
+*.idea
+*.vscode
+.idea/*
+.vscode/*
+
 # Logs
 logs
 *.log
@@ -59,3 +65,5 @@ typings/
 
 # next.js build output
 .next
+github_ssh_key
+github_ssh_key.pub
