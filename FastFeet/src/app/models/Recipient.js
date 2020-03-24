@@ -12,8 +12,6 @@ class Recipient extends Model {
         state: Sequelize.STRING,
         cep: Sequelize.VIRTUAL,
         postal_code: Sequelize.NUMBER,
-        created_at: Sequelize.DATE,
-        updated_at: Sequelize.DATE,
       },
       {
         sequelize,
