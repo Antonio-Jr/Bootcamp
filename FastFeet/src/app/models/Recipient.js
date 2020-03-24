@@ -26,7 +26,10 @@ class Recipient extends Model {
     });
 
     this.addHook('beforeFind', async recipient => {
-      if (!recipient.where.postal_code) return;
+      if (!recipient.where.postal_code) {
+        return;
+      }
+
       const pattern = new RegExp(/[^\d]/, 'gmi');
       recipient.where.postal_code = recipient.where.postal_code.replace(
         pattern,
